@@ -1,4 +1,5 @@
 var updateBtns = document.getElementsByClassName('update-cart')
+var updateBtns = document.getElementsByClassName('update-wishlist')
 
 
 for(var i=0;i<updateBtns.length; i++) {
