@@ -8,7 +8,12 @@ body{
 	
 }
 
-
+.link{
+	padding:0;
+}
+.card-link-1{
+	padding-top: 0;
+}
 
 .navbar{
 	background-color: rgb(41, 98, 255);
@@ -61,52 +66,41 @@ body{
 
 .first-img{
 	width: 50%;
+	height: 350px;
 }
 .second-img{
-	height: 505px;
+	height: 350px;
 	width: 755px;
 	margin-right: 0;
 }
 
 .Card-1{
-	margin: 10px 5px 10px 18px;
+	margin: 20px 5px 10px 10px;
 	display: inline-block;
-	height: 300px;
+	height: 310px;
 	width: 360px;
 	border-style: inset;
-	background-color: #e31c79;
+	background-color:rgb(41, 98, 255);
 }
-.Card-2{
-	margin: 10px 5px 10px 5px;
-	display: inline-block;
-	height: 200px;
-	width: 360px;
-	border-style: inset;
-	background-color: #e31c79;
-}
-.Card-3{
-	margin: 10px 5px 10px 5px;
-	display: inline-block;
-	height: 200px;
-	width: 360px;
-	border-style: inset;
-	background-color: #e31c79;
-}
-.Card-4{
-	margin: 10px 10px 10px 5px;
-	display: inline-block;
-	height: 200px;
-	width: 360px;
-	border-style: inset;
-	background-color: #e31c79;
-}
+
 .bhu-img{
 	padding: 10px 15px 10px 15px;
-	background-color: #e31c79 !important;
-	width: 350px;
+	background-color: rgb(41, 98, 255) !important;
+	width: 355px;
 	height: 200px;
 }
 .card-title-1{
 	line-height: 1rem;
 	padding-top: 6px;
+}
+.card-link-1{
+	padding-right: 10px;
+	color: #000000;
+}
+.card-link-2{
+	padding-left: 10px;
+	color: #000000;
+}
+.card-link-1:hover{
+	color: #ffffff;
 }
