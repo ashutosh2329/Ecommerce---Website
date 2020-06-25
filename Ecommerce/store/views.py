@@ -7,6 +7,16 @@ from .utils import cookieCart,cartData,guestOrder
 
 # Create your views here.
 
+def frontpage(request):
+	context={
+	    'name':'ashutosh',
+	    'page':'frontpage',
+
+	}
+	return render(request, "frontpage.html", context)
+
+
+
 def store(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
