@@ -21,11 +21,12 @@ body{
 	color: #000000;
 	top: 0;
 	height: 80px;
+	width: 100%;
 }
 
 
 .navbar-fixed-top {
-  top: 0;
+  position: fixed;
   
 }
 
@@ -70,7 +71,7 @@ body{
 }
 .second-img{
 	height: 350px;
-	width: 680px;
+	width: 49%;
 	margin-right: 0;
 }
 
@@ -78,15 +79,16 @@ body{
 	margin: 5px 5px 5px 5px;
 	display: inline-block;
 	height: 310px;
-	width: 340px;
+	width: 24%;
 	border-style: inset;
 	background-color:rgb(41, 98, 255);
 }
 
 .bhu-img{
-	padding: 10px 15px 10px 15px;
+	align-items: center;
+	padding: 5px 5px 5px 20px;
 	background-color: rgb(41, 98, 255) !important;
-	width: 320px;
+	width: 90%;
 	height: 200px;
 }
 .card-title-1{
