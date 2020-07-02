@@ -6,6 +6,23 @@ h1,h2,h3,h4,h5,h6{
 	color:hsl(0, 0%, 30%);
 }
 
+.navbar{
+	background-color: rgb(41, 98, 255);
+
+}
+.navbar-brand{
+	color: #000000 !important;
+}
+.navbar-brand:hover{
+	color: #ffffff !important;
+}
+
+.nav-link{
+	color: #000000 !important;
+}
+.nav-link:hover{
+	color: #ffffff !important;
+}
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: $pink;
@@ -25,9 +42,6 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 0 0 4px 4px;
 }
 
-.bg-dark{
-	background-color: #4f868c!important;
-}
 
 #cart-icon{
 	width:25px;
