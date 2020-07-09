@@ -31,7 +31,7 @@ def store_Amu(request):
 
 	products = Product.objects.all()
 	context = {'products':products,'cartItems':cartItems}
-	return render(request, "store.html", context)
+	return render(request, "store_Amu.html", context)
 
 def store_Au(request):
 	data = cartData(request)
@@ -39,7 +39,7 @@ def store_Au(request):
 
 	products = Product.objects.all()
 	context = {'products':products,'cartItems':cartItems}
-	return render(request, "store.html", context)
+	return render(request, "store_Au.html", context)
 
 def store_Du(request):
 	data = cartData(request)
@@ -47,7 +47,7 @@ def store_Du(request):
 
 	products = Product.objects.all()
 	context = {'products':products,'cartItems':cartItems}
-	return render(request, "store.html", context)
+	return render(request, "store_Du.html", context)
 
 def cart(request):
 	data = cartData(request)
