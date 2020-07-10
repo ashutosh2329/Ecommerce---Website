@@ -12,6 +12,9 @@ class Customer(models.Model):
 		return self.name
 
 
+		
+
+
 
 
 class Product(models.Model):
