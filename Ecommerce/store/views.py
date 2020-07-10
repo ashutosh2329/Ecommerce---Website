@@ -45,7 +45,7 @@ def store_Du(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
 
-	products = Product.objects.all()
+	products = Product.objects.filter(category='DU')
 	context = {'products':products,'cartItems':cartItems}
 	return render(request, "store_Du.html", context)
 

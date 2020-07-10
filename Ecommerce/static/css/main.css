@@ -1,5 +1,5 @@
 body{
-	background-color: hsl(0, 0%, 98%);
+	background-color: rgb(41, 98, 255);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -9,6 +9,10 @@ h1,h2,h3,h4,h5,h6{
 .navbar{
 	background-color: rgb(41, 98, 255);
 
+}
+.navbar-fixed-top {
+  position: fixed !important  ;
+  
 }
 .navbar-brand{
 	color: #000000 !important;
@@ -25,7 +29,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
-	background-color: $pink;
+	background-color: rgb(41, 98, 255);
 	border-radius: 4px;
 	padding: 10px;
 }
@@ -53,7 +57,7 @@ h1,h2,h3,h4,h5,h6{
 	display: block;
 	text-align: center;
 	color:#fff;
-	background-color: pink;
+	background-color: rgb(41, 98, 255);
 	width: 20px;
 	height: 25px;
 	border-radius: 50%;
