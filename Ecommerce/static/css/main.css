@@ -2,8 +2,8 @@ body{
 	background-color: #ffffff;
 }
 
-h1,h2,h3,h4,h5,h6{
-	color:hsl(0, 0%, 30%);
+h1,h2,h3,h4,h5,h6,p{
+	color:#000000;
 }
 
 .navbar{
@@ -60,12 +60,12 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 14px;
 }
 
-.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+.col-lg-4, .col-lg-8, .col-lg-12{
 	margin-top: 10px;
 	margin: 0;
 	padding: 0;
 	border:solid;
-	border-color: #000000;
+	border-color: #ffffff;
 	background-color: #000000;
 }
 
@@ -124,6 +124,22 @@ h1,h2,h3,h4,h5,h6{
 .button:hover{
 	background-color: #ffffff;
 	color: #000000 ;
+}
+.store{
+	display: inline-block;
+	border: solid;
+	border-color: #ffffff;
+	background-color: rgb(41, 98, 255);
+	margin-bottom: 10px;
+}
+.cart-icon{
+	width: 25%;
+	border-radius: 50%;
+	background-color: rgb(41, 98, 255);
+	margin: 0;
+	padding: 0px;
+	
+	
 }
 
 

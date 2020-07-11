@@ -1,11 +1,53 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
 import json
 import datetime
+
+from .forms import CreateUserForm
 from django.http import JsonResponse
 from .utils import cookieCart,cartData,guestOrder
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
+
 
 # Create your views here.
+def register(request):
+	form = CreateUserForm()
+
+	if request.method == 'POST':
+		form = CreateUserForm(request.POST)
+		if form.is_valid():
+			form.save()
+			user = form.cleaned_data.get('username')
+			messages.success(request,'Account was created for' + " " + user)
+			return redirect('loginpage')
+
+
+	context = {'form':form}
+	return render(request, 'register.html', context)
+
+
+
+def loginpage(request):
+	if request.method == 'POST':
+		username = request.POST.get('username')
+		password = request.POST.get('password')
+
+		user = authenticate(request, username=username, password=password)
+
+		if user is not None:
+			login(request, user)
+			return redirect('frontpage')
+		else:
+			messages.info(request, 'username or password is incorrect')
+	context = {}
+	return render(request, 'login_Page.html', context)
+
+
+def logoutUser(request):
+	logout(request)
+	return redirect('loginpage')
 
 def frontpage(request):
 	context={
@@ -46,6 +88,8 @@ def Th_home(request):
 	}
 	return render(request, "Th_home.html", context)
 
+
+
 def store(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
@@ -66,7 +110,7 @@ def store_Th(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
 
-	products = Product.objects.filter(category='THA')
+	products = Product.objects.filter(category='TH')
 	context = {'products':products,'cartItems':cartItems}
 	return render(request, "store_Th.html", context)
 

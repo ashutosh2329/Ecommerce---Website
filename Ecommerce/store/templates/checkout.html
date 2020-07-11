@@ -8,9 +8,9 @@
 <body>
 {% block content %}
      <div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-6">
 			<div class="box-element">
-				<a  class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
+				<a  class="btn button btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
 				<hr>
 				<h3>Order Summary</h3>
 				<hr>
@@ -26,7 +26,7 @@
 				<h5>Total:${{order.get_cart_total|floatformat:2}}</h5>
 			</div>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-6">
 			<div class="box-element" id="form-wrapper">
 				<form id="form">
 					<div id="user-info">
@@ -60,7 +60,7 @@
 					</div>
 
 					<hr>
-					<input id="form-button" class="btn btn-success btn-block" type="submit" value="Continue">
+					<input id="form-button" class="btn button btn-success btn-block" type="submit" value="Continue">
 				</form>
 			</div>
 			
