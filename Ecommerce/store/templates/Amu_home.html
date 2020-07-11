@@ -1,21 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../static/css/design.css">
-
-    <title>University-com</title>
-  </head>
-  <body>
-    <div>
+    <link rel="stylesheet" type="text/css" href="../../static/css/Bhu.css">
+	<title>Bhu_home</title>
+</head>
+<body>
+	<div>
     <nav class="navbar-fixed-top navbar navbar-expand-lg  navbar-light">
-      <p data-letters1="UC"></p>
-     <a class="navbar-brand" href="#">Contact Us</a>
+      <p data-letters1="BHU"></p>
+     
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
      </button>
@@ -27,22 +26,10 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'cart' %}">Cart</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          University E-shop
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'store' %}">BHU</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{% url 'store_Du' %}">DU</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{% url 'store_Amu' %}">AMU</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{% url 'store_Th' %}">THAPPAR</a>
-        </div>
-      </li>
-      
+      </li>  
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'frontpage' %}">UEcom</a>
+      </li>     
 
      </ul>
      <li>
@@ -52,82 +39,16 @@
   </div>
 </nav>
 </div>
-
-
 <br>
 <br>
 <br>
-
-
-
-<div class="mid-container">
-  <img class="first-img" src="https://img.freepik.com/free-photo/product-package-boxes-shopping-bag-cart-with-laptop-online-shopping-delivery-concept_38716-138.jpg?size=626&ext=jpg">
-  <img class="second-img" src="https://i.pinimg.com/originals/7f/47/92/7f47927ad7bb92301c978bf6a55c7585.jpg">
+<div class="div1">
+	<img class="bhuhome1" src="../../static/images/bhuhome1.jpg">
 </div>
-<div class="Card-1">
-  <div class="Card-body 1">
-    <h5 class="card-title-1">BHU</h5>
-    <a href="{% url 'Bhu_home' %}"><img class="bhu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLIJnL6jqEXeOimf0QvmHPAxXfpSBhG4YAGg&usqp=CAU"></a>
-     <h2 class="link">Sale 50% off</h2>
-    <a href="{% url 'store' %}" class="card-link-1">BHU campus store</a>
-    <a href="#" class="card-link-2">future development</a>
-  </div>
-</div>
-<div class="Card-1">
-  <div class="Card-body 1">
-    <h5 class="card-title-1">DU</h5>
-    <a href="{% url 'Du_home' %}"><img class="bhu-img" src="https://qph.fs.quoracdn.net/main-qimg-637853cb6b854b2a1bb29920665d11b6"></a>
-     <h2 class="link">Sale 40% off</h2>
-    <a href="{% url 'store_Du' %}" class="card-link-1">DU campus store</a>
-    <a href="#" class="card-link-2">future development</a>
-  </div>
-</div>
-<div class="Card-1">
-  <div class="Card-body 1">
-    <h5 class="card-title-1">AMU</h5>
-    <a href="{% url 'Amu_home' %}"><img class="bhu-img" src="https://cdn.shopify.com/s/files/1/1620/6469/products/amu-men-t-shirts-short-sleeve-tee-for-cotton-00019-casual-ultrabasic_998_656x766_crop_center.jpg?v=1586327891"></a>
-     <h2 class="link">Sale 30% off</h2>
-    <a href="{% url 'store_Amu' %}" class="card-link-1">AMU campus store</a>
-    <a href="#" class="card-link-2">future development</a>
-  </div>
-</div>
-<div class="Card-1">
-  <div class="Card-body 1">
-    <h5 class="card-title-1">Thappar Institute</h5>
-    <a href="{% url 'Th_home' %}"><img class="bhu-img" src="https://www.exprez.in/app/uploads/2015/12/24-1.jpg"></a>
-     <h2 class="link">Sale 60% off</h2>
-    <a href="{% url 'store_Th' %}" class="card-link-1">Thappar campus store</a>
-    <a href="#" class="card-link-2">future development</a>
-  </div>
+<div class="div2">
+	<img class="bhuhome2" src="../../static/images/bhuhome2.jpg">
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
