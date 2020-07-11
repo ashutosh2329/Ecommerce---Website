@@ -15,13 +15,20 @@ def frontpage(request):
 	}
 	return render(request, "frontpage.html", context)
 
+def Bhu_home(request):
+	context={
+	    'name':'ashutosh',
+	    'page':'frontpage',
+
+	}
+	return render(request, "Bhu_home.html", context)
 
 
 def store(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
 
-	products = Product.objects.all()
+	products = Product.objects.filter(category='BHU')
 	context = {'products':products,'cartItems':cartItems}
 	return render(request, "store.html", context)
 
@@ -29,17 +36,17 @@ def store_Amu(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
 
-	products = Product.objects.all()
+	products = Product.objects.filter(category='AMU')
 	context = {'products':products,'cartItems':cartItems}
 	return render(request, "store_Amu.html", context)
 
-def store_Au(request):
+def store_Th(request):
 	data = cartData(request)
 	cartItems = data['cartItems']
 
-	products = Product.objects.all()
+	products = Product.objects.filter(category='THA')
 	context = {'products':products,'cartItems':cartItems}
-	return render(request, "store_Au.html", context)
+	return render(request, "store_Th.html", context)
 
 def store_Du(request):
 	data = cartData(request)
