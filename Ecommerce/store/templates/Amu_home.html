@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	    <!-- Required meta tags -->
+      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../static/css/Bhu.css">
-	<title>Bhu_home</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/amu.css">
+   <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    
+  <title>Amu_home</title>
 </head>
 <body>
-	<div>
+  <div>
     <nav class="navbar-fixed-top navbar navbar-expand-lg  navbar-light">
-      <p data-letters1="BHU"></p>
+      <p data-letters1="AMU"></p>
      
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,7 +24,7 @@
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'store' %}">Store <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'store_Amu' %}">Amu_Store <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'cart' %}">Cart</a>
@@ -32,21 +34,23 @@
       </li>     
 
      </ul>
+      
+        <a class="nav-link" href="">{{request.user}}</a>
+       
      <li>
-       <a href="{% url 'cart' %}"> <img class="cart-icon"  src="data:image/png;base64,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"></a>
+       <a href="{% url 'cart' %}"> <img class="cart-icon"  src=" ../../static/images/carticon.jpg"></a>
       </li>
 
   </div>
 </nav>
 </div>
-<br>
-<br>
-<br>
-<div class="div1">
-	<img class="bhuhome1" src="../../static/images/bhuhome1.jpg">
-</div>
-<div class="div2">
-	<img class="bhuhome2" src="../../static/images/bhuhome2.jpg">
+<div class="container1">
+  <img class="Bhu_img" src="../../static/images/home3.jpeg">
+   <h1 class="text1">AMU</h1>
+  <h1 class="text">"Your body is the temple of God. Always feel God within you and never let this temple be impure."</h1>
+  
+  
+
 </div>
 
 

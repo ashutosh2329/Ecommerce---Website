@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../static/css/Bhu.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/bhu.css">
+   <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     
 	<title>Bhu_home</title>
 </head>
@@ -23,7 +24,7 @@
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'store' %}">Store <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'store' %}">Bhu_Store <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'cart' %}">Cart</a>
@@ -33,6 +34,9 @@
       </li>     
 
      </ul>
+      
+        <a class="nav-link" href="">{{request.user}}</a>
+       
      <li>
        <a href="{% url 'cart' %}"> <img class="cart-icon"  src=" ../../static/images/carticon.jpg"></a>
       </li>
@@ -42,7 +46,10 @@
 </div>
 <div class="container1">
   <img class="Bhu_img" src="../../static/images/home.jpg">
-
+   
+  <h1 class="text">"Your body is the temple of God. Always feel God within you and never let this temple be impure."</h1>
+  <h1 class="text1">BHU</h1>
+  <h1 class="text2">"Your body is the temple of God. Always feel God within you and never let this temple be impure."</h1>
 
 </div>
 

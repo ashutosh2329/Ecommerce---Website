@@ -82,27 +82,13 @@ body{
   position: fixed;
 }
 
-
-.text{
-  position: relative;
-  display: inline-block;
-  
-  color: #ddf3f5;
-  margin-left: 100px;
-  margin-top: 60px;
-  font-family: 'Merienda One', cursive;
-  width: 700px;
-}
-.text:hover{
-  color:#ffffff ;
 }
 .text2{
   position: relative;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 0px;
   color: #ddf3f5;
-  margin-left: 700px;
-  
+  margin-left: 0px;
   font-family: 'Merienda One', cursive;
   width: 700px;
 }
@@ -115,8 +101,8 @@ body{
   display: inline-block;
   
   color: #ddf3f5;
-  margin-left: 700px;
-  margin-top: 100px;
+  margin-left: 600px;
+  margin-top: 120px;
   font-family: 'Merienda One', cursive;
   width: 700px;
 }

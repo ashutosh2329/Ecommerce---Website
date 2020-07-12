@@ -87,35 +87,23 @@ body{
   position: relative;
   display: inline-block;
   
-  color: #ddf3f5;
-  margin-left: 100px;
-  margin-top: 60px;
+  color: #79d70f;
+  margin-left: 200px;
+  margin-top: 150px;
   font-family: 'Merienda One', cursive;
   width: 700px;
 }
 .text:hover{
   color:#ffffff ;
 }
-.text2{
-  position: relative;
-  display: inline-block;
-  margin-top: 100px;
-  color: #ddf3f5;
-  margin-left: 700px;
-  
-  font-family: 'Merienda One', cursive;
-  width: 700px;
-}
-.text2:hover{
-  color:#ffffff ;
-}
+
 
 .text1{
   position: relative;
   display: inline-block;
   
-  color: #ddf3f5;
-  margin-left: 700px;
+  color: #79d70f;
+  margin-left: 1000px;
   margin-top: 100px;
   font-family: 'Merienda One', cursive;
   width: 700px;
