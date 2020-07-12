@@ -1,5 +1,5 @@
 body{
-	background-color: #ffffff;
+	background-color: #000000;
 }
 
 .cart-icon{
@@ -70,21 +70,13 @@ body{
   }
 
 
-.bhuhome2{
-      padding-right: 0px;
-      width: 687px;
-      height: 500px;
-  }
-.bhuhome1{
-      padding-left: 10px ;
-      padding-right: 0;
-      width: 687px;
-      height: 500px;
-  }
+.container1{
+  margin:80px 50px 0 50px ;
+  position: fixed;
 
-.div1{
-	display: inline-block;
+
 }
-.div2{
-	display: inline-block;
+.Bhu_img{
+  width: 100%;
+  height: 800px;
 }
