@@ -85,10 +85,10 @@ body{
 }
 .text2{
   position: relative;
-  display: inline-block;
+  display: inline;
   margin-top: 0px;
   color: #ddf3f5;
-  margin-left: 0px;
+  margin-left: 50px;
   font-family: 'Merienda One', cursive;
   width: 700px;
 }
