@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -13,6 +13,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Sacramento&display=swap" rel="stylesheet">
 
     <title>University-com</title>
+      <script type="text/javascript">
+    var user = '{{request.user}}'
+    function getToken(name) {
+      var cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          var cookies = document.cookie.split(';');
+          for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i].trim();
+              // Does this cookie string begin with the name we want?
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+  }
+  var csrftoken = getToken('csrftoken');
+
+  function getCookie(name) {
+    // body..
+    // split cookie string and get all individual name=value pairs in an array
+    var cookieArr = document.cookie.split(";");
+    // loop through the array elements 
+    for(var i= 0;i<cookieArr.length;i++){
+      var cookiePair = cookieArr[i].split("=");
+
+
+      // removing whitespace at the beginning of the cookie name and compare it with given string
+      if (name == cookiePair[0].trim()) {
+        return decodeURIComponent(cookiePair[1]);
+      }
+    }
+    //return null if not found
+    return null;
+  }
+  var cart = JSON.parse(getCookie('cart'))
+  if(cart == undefined){ 
+    cart = {}
+    console.log('cart was created')
+    document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+  }
+  console.log('cart:',cart)
+  </script>
   </head>
   <body>
     <div>

@@ -74,7 +74,7 @@ def Du_home(request):
 	return render(request, "Du_home.html", context)
 def Amu_home(request):
 	context={
-	    'name':'ashutosh',
+	    'name':'Tanzeem',
 	    'page':'frontpage',
 
 	}
@@ -82,7 +82,7 @@ def Amu_home(request):
 
 def Th_home(request):
 	context={
-	    'name':'ashutosh',
+	    'name':'Tanzeems',
 	    'page':'frontpage',
 
 	}
