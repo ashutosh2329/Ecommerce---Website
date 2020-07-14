@@ -31,4 +31,7 @@ urlpatterns = [
     path('Amu_home/', views.Amu_home, name="Amu_home"),
     path('Th_home/', views.Th_home, name="Th_home"),
 
+    #future page
+    path('future/',views.future, name="future"),
+
 ]

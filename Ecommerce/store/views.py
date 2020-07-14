@@ -56,6 +56,13 @@ def frontpage(request):
 
 	}
 	return render(request, "frontpage.html", context)
+def future(request):
+	context={
+	    'name':'ashutosh',
+	    'page':'frontpage',
+
+	}
+	return render(request, "future.html", context)
 
 def Bhu_home(request):
 	context={

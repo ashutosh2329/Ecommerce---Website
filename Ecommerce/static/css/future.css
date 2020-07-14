@@ -1,0 +1,26 @@
+body{
+	 background-color: #000000;
+	 font-family: 'Merienda One', cursive;
+	
+}
+.Card-2{
+	margin: 5px 5px 5px 5px;
+	display: inline-block;
+	height: 310px;
+	width: 20%;
+	background-color:#000000;
+	margin: 50px 0px 10px 130px; 
+	border-radius: 50px;
+}
+
+.card-title-2{
+	line-height: 1rem;
+	padding:10px;
+	color: #ffffff;
+	margin-left:40px;
+}
+.card-data{
+	width: 75%;
+	margin: 5px 10px 0px 70px;
+	color: #cf7500;
+}
