@@ -1,5 +1,5 @@
 body{
-	 background-color: #000000;
+	 background-color: #ffffff;
 	 font-family: 'Merienda One', cursive;
 	
 }
@@ -24,3 +24,92 @@ body{
 	margin: 5px 10px 0px 70px;
 	color: #cf7500;
 }
+:root {
+  --background-color: transparent;
+  --font-color: #efefef;
+  --font-link-color: #efefef;
+  --card-width: 400px;
+  --card-height: 400px;
+  --card-img-width: 380px;
+}
+
+body {
+  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+.card-container {
+  background: var(--background-color,#212121);
+  border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
+  border-radius: 5px;
+  margin: 8rem auto;
+  padding: 4px;
+  max-width: var(--card-width, 400px);
+  height: var(--card-height, 400px);
+  &:hover {
+    box-shadow: 0 10px 35px rgba(0,0,0,0.80), 0 10px 10px rgba(0,0,0,0.50);
+  }
+}
+
+.card-content {
+  padding: 10px;
+  color: var(--font-color,#efefef);
+  p {
+    text-align: justify;
+    line-height: 25px;
+  }
+}
+
+.card-header {
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+.card-text, .card-links {
+  position: relative;
+  bottom: 5em;
+}
+.card-image {
+  img {
+    width: var(--card-img-width, 372px);
+    opacity: 0.8;
+  }
+}
+
+.card-links {
+  a {
+    color: var(--font-link-color,#1BA8F0);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and ( max-width: 640px ) {
+  
+  :root {
+    --card-img-width: 280px;
+    --card-width: 300px;
+    --card-height: 350px;
+  }
+  
+  .card-container {
+    width: var(--card-width, 280px);
+    height: var(--card-height, 300px);
+  }
+  
+  .card-image {
+    img {
+      width: var(--card-img-width, 280px);
+      margin: 0 auto;
+      display: block;
+    }
+  }
+} // end @media
