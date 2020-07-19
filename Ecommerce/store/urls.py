@@ -4,9 +4,10 @@ from . import views
 
 urlpatterns = [
     # user page
-    path('registerPage', views.register, name="register"),
+    
     path('loginpage', views.loginpage, name="loginpage"),
     path('logout', views.logoutUser, name="logout"),
+    path('index', views.register, name="index"),
 
     # common urls
     path('', views.frontpage, name="home"),

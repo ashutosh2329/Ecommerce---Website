@@ -25,7 +25,7 @@ def register(request):
 
 
 	context = {'form':form}
-	return render(request, 'register.html', context)
+	return render(request, 'index.html', context)
 
 
 
@@ -56,6 +56,14 @@ def frontpage(request):
 
 	}
 	return render(request, "frontpage.html", context)
+
+def index(request):
+	context={
+	    'name':'ashutosh',
+	    'page':'frontpage',
+
+	}
+	return render(request, "index.html", context)
 def future(request):
 	context={
 	    'name':'ashutosh',
