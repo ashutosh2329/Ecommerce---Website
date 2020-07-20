@@ -1,17 +1,4 @@
-body{
-	 background-color: #ffffff;
-	 font-family: 'Merienda One', cursive;
-	
-}
-.Card-2{
-	margin: 5px 5px 5px 5px;
-	display: inline-block;
-	height: 310px;
-	width: 20%;
-	background-color:#000000;
-	margin: 50px 0px 10px 130px; 
-	border-radius: 50px;
-}
+
 
 .card-title-2{
 	line-height: 1rem;
@@ -22,7 +9,7 @@ body{
 .card-data{
 	width: 75%;
 	margin: 5px 10px 0px 70px;
-	color: #cf7500;
+	color: #000000;
 }
 :root {
   --background-color: transparent;
@@ -35,7 +22,7 @@ body{
 
 body {
   background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-  font-family: Helvetica, sans-serif;
+   font-family: 'Merienda One', cursive;
 }
 
 main {
@@ -43,54 +30,20 @@ main {
 }
 
 .card-container {
+  display: inline-block;
   background: var(--background-color,#212121);
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
   border-radius: 5px;
-  margin: 8rem auto;
+ margin: 50px 0px 10px 130px;
   padding: 4px;
-  max-width: var(--card-width, 400px);
-  height: var(--card-height, 400px);
+  height: 250px;
+  width: 300px;
   &:hover {
     box-shadow: 0 10px 35px rgba(0,0,0,0.80), 0 10px 10px rgba(0,0,0,0.50);
   }
 }
 
-.card-content {
-  padding: 10px;
-  color: var(--font-color,#efefef);
-  p {
-    text-align: justify;
-    line-height: 25px;
-  }
-}
-
-.card-header {
-  h1 {
-    text-align: center;
-    text-transform: capitalize;
-  }
-}
-.card-text, .card-links {
-  position: relative;
-  bottom: 5em;
-}
-.card-image {
-  img {
-    width: var(--card-img-width, 372px);
-    opacity: 0.8;
-  }
-}
-
-.card-links {
-  a {
-    color: var(--font-link-color,#1BA8F0);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
 
 @media only screen and ( max-width: 640px ) {
   
@@ -105,11 +58,4 @@ main {
     height: var(--card-height, 300px);
   }
   
-  .card-image {
-    img {
-      width: var(--card-img-width, 280px);
-      margin: 0 auto;
-      display: block;
-    }
-  }
 } // end @media
