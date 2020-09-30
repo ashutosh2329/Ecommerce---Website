@@ -5,12 +5,12 @@ body{
 }
 
 .cart-icon{
-	width: 10%;
+	width: 20%;
 	border-radius: 60%;
 	background-color: rgb(41, 98, 255);
 	margin: 0;
 	padding: 0px;
-	margin-left: 400px;
+	margin-left: 200px;
 	
 }
 
@@ -82,10 +82,10 @@ body{
 }
 
 .Card-1{
-	margin: 5px 5px 5px 5px;
+	margin: 6px 10px 5px 10px;
 	display: inline-block;
 	height: 310px;
-	width: 24%;
+	width: 23%;
 	border-style: inset;
 	background-color:rgb(41, 98, 255);
 }
@@ -191,7 +191,7 @@ body{
 }
 
 .card-title-2{
-	line-height: 1rem;
+	line-height: 2rem;
 	padding:10px;
 	color: #ffffff;
 	margin-left:50px;
